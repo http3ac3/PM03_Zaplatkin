@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="test\Тестирование.docx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="docs\блок-схема.png" />
