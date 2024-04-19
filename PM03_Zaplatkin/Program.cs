@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace PM03_Zaplatkin
 {
@@ -65,6 +66,13 @@ namespace PM03_Zaplatkin
             {
                 Console.WriteLine(t);
             }
+
+            string catalogPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string fileName = @"tripsData.txt";
+            string fullFileName = Path.Combine(catalogPath, fileName);
+
+            touristicOperator.SaveTripsToFile(fullFileName);
+            Console.WriteLine("Отсортированные данные сохранены в файле по пути: '" + fullFileName + "'");
         }
     }
 }

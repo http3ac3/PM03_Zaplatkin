@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace PM03_Zaplatkin
 {
@@ -43,6 +44,17 @@ namespace PM03_Zaplatkin
                             this.trips[j] = temp;
                         }
                     }
+                }
+            }
+        }
+
+        public void SaveTripsToFile(string path)
+        {
+            using (StreamWriter sw = new StreamWriter(path))
+            {
+                foreach (var t in trips)
+                {
+                    sw.WriteLine(t);
                 }
             }
         }
