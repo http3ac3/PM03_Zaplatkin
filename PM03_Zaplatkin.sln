@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PM03_Zaplatkin", "PM03_Zapl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B3865624-29DB-40B9-9762-23E4197CD93C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{34CD9487-1199-478F-9557-32D007EA7433}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\блок-схема.png = ..\..\..\Downloads\блок-схема.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
