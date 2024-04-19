@@ -10,6 +10,7 @@ namespace PM03_Zaplatkin
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
