@@ -35,7 +35,7 @@ namespace PM03_Zaplatkin
         {
             if (price <= 0)
             {
-                throw new Exception("Цена поездки не может быть меньше или равна нулю");
+                throw new Exception("Цена поездки не может быть меньше или равна нулю!");
             }
             this.price = price;
         }
@@ -49,9 +49,16 @@ namespace PM03_Zaplatkin
         {
             if (tourGroupSize <= 0)
             {
-                throw new Exception("Размер туристической группы не может быть меньше или равен нулю");
+                throw new Exception("Размер туристической группы не может быть меньше или равен нулю!");
             }
             this.tourGroupSize = tourGroupSize;
+        }
+
+        public override string ToString()
+        {
+            return "Продолжительность поездки: " + this.duration + 
+                   ", Цена поездки: " + this.price +
+                   ", Размер туристической группы: " + this.tourGroupSize;
         }
     }
 }
