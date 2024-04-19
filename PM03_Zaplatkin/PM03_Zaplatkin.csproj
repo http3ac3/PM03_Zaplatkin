@@ -45,9 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\Program.cs" />
-    <Compile Include="src\TouristicOperator.cs" />
-    <Compile Include="src\Trip.cs" />
     <Compile Include="TouristicOperator.cs" />
     <Compile Include="Trip.cs" />
   </ItemGroup>
@@ -56,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="docs\блок-схема.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
